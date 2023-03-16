@@ -1,0 +1,156 @@
+
+*{
+    background-color: hsla(240, 94%, 12%, 0.75);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    border: 0.5px transparent black;
+    border-radius: 3px;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    display: block;
+
+    background-color: rgba(117, 110, 100, 0.6);
+
+    border:0.5px solid grey;
+    padding: 2px;
+    margin: 0px;
+}
+
+.container{
+    display: grid;
+    justify-items: center;    
+    position: relative;
+
+    background-color: rgb(39, 33, 73,0.75);
+
+    min-height: 100%;
+
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    padding: 2px;
+    margin: 0px;
+}
+
+/*Barra de navegacion:*/
+
+.nav-bar{
+    display: flex;
+
+    background-color: rgba(255, 255, 255, 0.247);
+    position: relative;
+
+    justify-content: center;
+
+    width: 50%;
+    height: 20px;
+
+    border: 0.5px solid black;
+    padding: 0px;
+
+}
+
+.nav-content{
+
+    display: inline-flex;
+
+    float:left;
+    
+    width: 30%;
+
+    background-color: rgba(240, 248, 255, 0.5);
+    color: whitesmoke;
+    
+    justify-content: center;
+    align-items: center;
+
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1px;
+}
+
+.nav-content *{
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-content a{
+    display: inline-flex;
+
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-content:hover{
+    background-color:rgba(93, 37, 145, 0.75);
+
+    width: 40%;
+
+    border: 0.25px solid rgba(255, 255, 255, 0.575);
+}
+
+.nav-content:hover a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav-content li {
+    display: block;
+    position: relative;
+
+    font-weight: bold;
+    list-style: none;
+}
+
+#menu-desplegable{
+    width: 10%;
+}
+
+#menu-desplegable:hover ul{
+    display: block;
+
+}
+
+
+#ul-nav-bar{
+    display: none;
+    list-style-type: none;
+
+    position: absolute;
+
+    background-color: rgba(191, 198, 204);
+
+    width: 100px;
+
+    border: 0.5px solid rgba(0, 0, 0);
+    border-radius: 5px;
+}
+
+#ul-nav-bar li{
+    display: block;
+
+    font-weight: bold;
+    font-size: smal;
+}
+
+#ul-nav-bar li a{
+    display: block;
+
+    color: black;
+}
+#ul-nav-bar li:hover a{
+    color: whitesmoke;
+}
+
+#ul-nav-bar li:hover{
+    background-color: rgba(93, 37, 145, 0.75);
+}
+
+
+
+

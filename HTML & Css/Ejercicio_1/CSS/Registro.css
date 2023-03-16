@@ -1,0 +1,420 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*Contenedores: */
+
+.cont{
+    display: block;
+
+    justify-content: center;
+
+    max-width: fit-content;
+    max-height: fit-content;
+
+    border: 0.5px solid black;
+    margin: auto;
+
+    position: relative;
+}
+
+.contenedor{
+    
+    background-color: rgba(71, 75, 77, 0.24);
+    display: block;
+
+    min-width: 400px;
+    max-width: 600px;
+    
+    border: 0.5px solid darkgray ;
+    border-radius: 2px;
+    padding: 10px;
+    margin:5px;
+    margin-bottom: 1px;
+}
+
+
+.cont_formulario{
+    display: grid;
+    
+    background-color: rgb(238, 238, 221) ;
+
+    width: 60%;
+    height: fit-content;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    padding: 0px;
+    margin: 5px;
+    margin-top: 1px;
+
+}
+
+.cont_formulario div{
+    background-color: rgba(245, 245, 220, 0);
+
+    max-width: 550px;
+    border: 0.5px transparent black;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#cont-texto{
+    display: block;
+    
+    position: relative;
+
+    height: 250px;
+
+    border: 0.5px transparent black;
+}
+
+#cont_cat{
+
+    background-color: rgba(240, 248, 255, 0);
+    display: flex;
+    
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+
+    border: 0.5px transparent black;
+    padding: 2px;
+    margin: 5px;
+}
+
+#cont_registros{
+    display: block;
+
+    float: right;
+}
+
+.tamano{
+    width: 125px;
+    height: 125px;
+}
+
+img{
+    display: flex;
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+    border: 0px solid white;
+    margin: 0px;
+    padding: 0px;
+}
+/*Formularios:*/
+
+form{
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+
+    display: block;
+
+    max-width: fit-content;
+    max-height: fit-content;
+
+    border: transparent;
+    padding-left: 20px;
+    padding-bottom: 20px ;
+}
+
+label{
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-block;
+
+    width: 150px;
+    height: fit-content;
+
+    text-align: justify;
+    font-weight: bolder;
+
+    border: 0px;
+    padding: 2px;
+    margin: 10px;
+}
+
+input{
+
+    background-color: rgb(197, 197, 175);
+    display: inline-block;
+
+    width: 200px;
+    height: fit-content;
+
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 10px;
+}
+
+input:hover{
+    background-color: darkgrey;
+    border: 1px solid white;
+    font-style: italic;
+}
+
+input:after{
+    background-color: black;
+}
+
+#mensaje{
+    
+    display: block;
+    width: 100%;
+
+}
+
+#text_box{
+    
+    font-family: sans-serif ;
+
+    display: flex;
+    background-color: rgb(206, 206, 183);
+
+    width: 365px;
+    height: 150px;
+
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 10px;
+}
+
+#text_box:hover{
+    background-color: darkgrey;
+    border: 1px solid white;
+    font-weight: bold;
+}
+
+#publico, #privado{
+    display: inline-block;
+
+    width: 75px;
+    
+    border: 0.5px transparent black;
+    margin: 2px;
+    padding: 2px;
+}
+
+
+/*Titulos:*/
+
+#titulo_ppal{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    text-decoration: solid;
+    
+    text-align: center;   
+}
+
+/*Tablas:*/
+
+table{
+
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0.5px solid white;
+
+
+    max-width: 60%;
+    height: 100%;
+
+}
+
+tr{
+    background-color: rgba(128, 128, 128, 0);
+}
+
+th{
+    background-color: rgba(211, 211, 211, 0);
+
+    border: 0px solid white;
+    padding: 0px;
+    margin: 0px;
+}
+
+#left-row{
+    width: 25%;
+}
+
+#right-row{
+    width: 75%;
+}
+
+/*Links:*/
+
+a{
+    background-color: black;
+
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Botones*/
+
+button{
+
+    display: block;
+    background-color: rgba(90, 90, 5, 0.5);
+
+    width: 100px;
+    height: 25px;
+
+    border: 0.5px solid rgba(0, 0, 0, 0.5) ;
+    border-radius: 15px;
+    padding: 2px;
+    margin: 2px 10px;
+
+}
+
+#enviar{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    
+    
+}
+#enviar:hover{
+    background-color: rgba(73, 73, 0, 0.75);
+    font-weight: bold;
+    color: beige;
+    border: 0.5px solid beige;
+}
+#enviar:checked{
+    background-color: black;
+}
+
+#dropdown-button{
+    background-color: beige;
+    text-align: left;
+
+    width: 180px;
+    height: 30px ;
+
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin:0px;
+}
+#dropdown-button:hover{
+    background-color: rgb(156, 156, 142);
+}
+
+/*Dropdown:*/
+
+.dropdown{
+    background-color: rgba(0, 0, 0, 0);
+
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 5px;
+
+    border: 0.5px transparent;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: none;
+
+}
+.dropdown-content a:hover{
+    background-color: rgb(156, 156, 142);
+
+}
+
+.dropdown-content a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+
+    background-color: beige;
+
+    border: 0.5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.select {
+    background-color: rgba(245, 245, 220, 0);
+    display: inline-block;
+
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+
+    border: 0.5px transparent rgba(0, 0, 0, 0.5);
+    padding: 2px;
+    margin: 5px;
+}
+
+.select select {
+    background-color:beige;
+
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.select select:hover{
+    background-color: rgb(156, 156, 142);
+}
+
+.select option{
+    background-color: beige;
+
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    margin: 2px;
+}
+
+/*Notificaciones:*/
+
+#mensaje-oculto{
+    display: none;
+    background-color: rgba(245, 245, 220, 0);
+
+    font-weight: lighter;
+    font-style: italic;
+
+    color: red;
+
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+
+    padding: 2px;
+    margin: 2px;
+
+}
+
+/* Registros: */
+
+#registros{
+    display: block;
+    position: relative;
+}
+
+#registro_unico{
+    display: inline-block;
+    position: absolute;
+}

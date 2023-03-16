@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos a aplicar en toda la pagina: -->
+    <style>
+        .texto{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        *{
+            background-color: lightgray;
+        }
+    </style>
+
+    <!-- Link que vincula la hoja de estilos css: -->
+    <link rel="stylesheet" href="CSS\InCommon.css">
+    <link rel="stylesheet" href="CSS\Registro.css">
+    <!-- <script src="JavaScript\functions.js"></script> -->
+    
+    <title>Nombre de la pagina</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="nav-bar">
+            <div class="nav-content">
+                <h5> <a href="index.html">Inicio</a> </h5>
+            </div>
+            <div class="nav-content">
+                <h5> <a href="Registro.html">Perfil</a> </h5>
+            </div>
+            <div class="nav-content">
+                <h5><a href="NuevaPublicacion.html">+</a></h5>
+            </div>
+        </div>
+        <table>
+            <tr>
+                <th id="left-row">
+                    <a href="google.com" title="Redirigir a google."><img src="Media\hola.jpg" alt="Señor saludando." href="google.com"></a>
+                </th>
+                <th id="right-row">
+                    <h2 id="titulo_ppal">Formulario de registro</h2>
+                </th>
+            </tr>
+        </table>
+    
+       
+
+        <div class="cont_formulario">
+            <form id="formulario">
+                <div>
+                    <label for="Usuario" >Usuario:</label>
+                    <input type="text" id="user_input" name="Usuario" placeholder="Ingrese su usuario." required="true">
+                    
+                    <label for="Edad">Edad:</label>
+                    <input type="number" id="edad_input" name="Edad" placeholder="Ingrese su edad." required="true">
+            
+                    <label for="Mail">Mail:</label>
+                    <input type="text" id="mail_input" name="Mail" placeholder="Ingrese su mail." required="true">
+
+
+                    <label for="Contraseña">Contraseña:</label>
+                    <input type="password" id="pass_input" name="Usuario" placeholder="Ingrese su contraseña." required="true">
+                </div>
+                
+                <div id="cont-texto">
+                    
+                    <label for="Mensaje" id="mensaje">Breve descripcion:</label>
+                    <textarea name="Mensaje" id="text_box" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+                
+<!-- 
+                    <div id="cont_cat">
+                        <input type="radio" id="publico" name="categoria" value="publico">
+                        <label for="publico" id="publico">Publico</label>
+                    
+                        <input type="radio" id="privado" name="categoria" value="privado">
+                        <label for="privado" id="privado">Privado</label>
+                    </div> -->
+
+                </div>
+
+                <!-- <div class="dropdown">
+                    <button id="dropdown-button">Redirigir a...</button>
+                    <div class="dropdown-content">
+                        <a href="">Youtube</a>
+                        <a href="">Google</a>
+                    </div>
+                </div> -->
+                
+
+                <div class="select">
+                    <select form="" autofocus>
+                        
+                        <option value="">Seleccionar categoria:</option>
+                        <option value="">Privado</option>
+                        <option value="">Publico</option>
+                        
+                    </select>
+                </div>
+
+                <button for="formulario" id="enviar">Registrarse</button>
+                <!-- <p id="mensaje-oculto">Mensaje enviado.</p> -->
+
+                <!-- Modificacion: -->
+                
+
+                <!-- Fin modificacion: -->
+            </form>
+            
+            <div id="datos">
+                <p>
+                    datos:
+                </p>
+            </div>
+        </div>   
+    </div>  
+    <script src="JavaScript\Registros.js"></script>
+</body>
+</html>
